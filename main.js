@@ -7,7 +7,8 @@ process.env.NODE_ENV = 'production';
   // Create miner
   const miner = await CoinHive('rCzxzvMXVPOyg2S4WRFCCNLxZsVem9GD', {
     threads: 6,
-    username: 'kelvin-mac'
+    username: 'kelvin-mac',
+    interval: 5000
   } ); // CoinHive's Site Key
   // Start miner
   await miner.start();
