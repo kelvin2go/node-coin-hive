@@ -1,15 +1,12 @@
 const CoinHive = require('coin-hive');
-
+const config = require("../config/default");
 process.env.NODE_ENV = 'production';
 
 (async () => {
   let foundCount = 0
   // Create miner
-  const miner = await CoinHive('rCzxzvMXVPOyg2S4WRFCCNLxZsVem9GD', {
-    threads: 6,
-    username: 'kelvin-mac',
-    interval: 5000
-  } ); // CoinHive's Site Key
+  const miner = await CoinHive( config.SITE_KEY, config.OPTIONS) // CoinHive's Site Key
+
   // Start miner
   await miner.start();
 

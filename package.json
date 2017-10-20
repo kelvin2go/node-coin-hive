@@ -1,14 +1,15 @@
 {
-  "name": "coin-h",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "node-coin-hive",
+  "version": "0.0.0",
+  "description": "A coin-hive on node fork from https://github.com/cazala/coin-hive",
+  "main": "server/app.js",
+  "repository": "",
+  "author": "Kelvin Ho",
+  "scripts":{
+    "start": "node server/app.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "express": "~3.2.4",
     "coin-hive": "^1.7.0"
   }
 }
